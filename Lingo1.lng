@@ -1,0 +1,29 @@
+!*********************************************************************************
+ Feladatgyujtemeny 2.feladata
+   x1 - # katona/het
+   x2 - # vonat/het
+
+**********************************************************************************;
+
+Model:
+	[Celfv] MAX = 3*x1 + 2*x2; 
+
+!Feltetelek: ;
+
+   !Feluletkezeles;	
+		
+	[Felulet] 2*x1+x2<=100;
+
+   !Fafaragas;
+
+	[Fafaragas] x1+x2<=80;
+
+   !Katona ;
+
+	[Katona] x1<=40;
+
+    ! Lingo kornyezetben a dontesi valtozok;
+    ! nemnegativak, igy ezeket kulon nem gepeljuk;
+
+End
+
